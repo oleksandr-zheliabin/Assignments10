@@ -95,9 +95,9 @@ class Animal4 {
     }
 
     speak = function () {
-        if (this.type = 'dog') {
+        if (this.type === 'dog') {
             console.log(`The ${this.color} dog is barking!`)
-        } else if (this.type = 'cat') {
+        } else if (this.type === 'cat') {
             console.log(`The ${this.color} cat is meowing!`)
         }
     }
@@ -105,11 +105,10 @@ class Animal4 {
 }
 const an4 = new Animal4('cat', 'bengal', 'pink', '2 feet', '10 feet')
 an4.speak()
-an4.status()
 
-const an5 = new Animal4('dog', 'bengal', 'pink', '2 feet', '10 feet')
+const an5 = new Animal4('dog', 'shepard', 'red', '1 feet', '5 feet')
 an5.speak()
-an5.status()
+
 
 // STEP 8 - Now, convert all of your properties to private properties. Then, create a private method called checkType(). In this method 
 //          you will check to see what the type is. If it’s dog, return dog, otherwise, return cat. Then, create a privileged method 
