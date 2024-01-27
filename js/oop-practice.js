@@ -115,6 +115,36 @@ an5.speak()
 //          called speak that returns the value of the checkType() method. The console window should now display 
 //          “The <animal type> has made a noise!”
 
+class Animal5 {
+    constructor(type, breed, color, height, length) {
+        let _type = type
+        let _breed = breed
+        let _color = color
+        let _height = height
+        let _length = length
+ 
+        let checkType = function (type) {
+            if (_type === 'dog')
+                return 'dog'
+            else
+                return 'cat'
+        }
+
+        this.speak = function () {
+
+            return checkType()
+        }
+	}
+
+}
+
+const an6 = new Animal5('cat', 'bengal', 'pink', '2 feet', '10 feet')
+console.log(`The ${an6.speak()} has made a noise!`)
+
+const an7 = new Animal5('dog', 'shepard', 'red', '1 feet', '5 feet')
+console.log(`The ${an7.speak()} has made a noise!`)
+
 // STEP 9 - Create your own String method called findWords that inherits from the native String Object. This method should find all 
 //          instances of a specific word within a provided paragraph of text. It should then alert out to the user the number of time 
 //          that word was found in the paragraph. Remember, you’ll need to add your method to the String object’s prototype.
+
